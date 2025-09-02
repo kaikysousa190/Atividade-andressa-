@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.profissao {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.profissao:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+}
+
+.profissao h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffdf6c;
+}
+
+.profissao p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+button {
+    background: #ffdf6c;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #fff;
+    color: #2575fc;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.profissao img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profissao img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+}
+
+body.professor {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+body.engenheiro {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+
+body.programador {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
